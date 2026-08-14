@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#FBF2E9"/>
+  <circle cx="250" cy="620" r="240" fill="#F6E3D3"/>
+  <!-- jar centered -->
+  <g transform="translate(560,180)">
+    <path d="M0 0 L200 0 L172 250 Q100 280 28 250 Z" fill="#ffffff" stroke="#241B2F" stroke-width="6"/>
+    <path d="M20 160 L180 160 L172 250 Q100 280 28 250 Z" fill="#F2A93B" opacity="0.9"/>
+    <rect x="-8" y="-24" width="216" height="34" rx="8" fill="#7A2E52"/>
+    <rect x="60" y="250" width="80" height="28" rx="6" fill="#241B2F"/>
+  </g>
+  <!-- magnifier -->
+  <g transform="translate(760,470)">
+    <circle cx="0" cy="0" r="80" fill="#ffffff" fill-opacity="0.5" stroke="#7A2E52" stroke-width="14"/>
+    <line x1="55" y1="55" x2="130" y2="130" stroke="#7A2E52" stroke-width="20" stroke-linecap="round"/>
+  </g>
+  <!-- gauge -->
+  <g transform="translate(950,260)">
+    <circle cx="0" cy="0" r="60" fill="#ffffff" stroke="#241B2F" stroke-width="6"/>
+    <path d="M0 0 L28 -32" stroke="#D48A1E" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="0" cy="0" r="6" fill="#241B2F"/>
+  </g>
+  <text x="600" y="700" font-family="Arial, sans-serif" font-size="34" fill="#6b5f66" text-anchor="middle">Diagnóstico: 20 € + IVA</text>
+</svg>
