@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 210">
+<rect width="980" height="210" rx="26" fill="#ffffff"/>
+<g transform="translate(28 26)">
+  <circle cx="78" cy="78" r="66" fill="#8d1f2d"/>
+  <path d="M48 40h56l-8 30H58z" fill="#fff"/>
+  <path d="M58 72h38l12 48c3 13-7 25-20 25H67c-13 0-23-12-20-25z" fill="#fff"/>
+  <path d="M66 88h21" stroke="#8d1f2d" stroke-width="7" stroke-linecap="round"/>
+  <path d="M72 52l6-20 7 20" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+</g>
+<text x="180" y="88" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="900" fill="#171717">Vitamix</text>
+<text x="420" y="88" font-family="Arial,Helvetica,sans-serif" font-size="64" font-weight="900" fill="#8d1f2d">Tech</text>
+<text x="183" y="136" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" letter-spacing="2.6" fill="#676767">SERVICIO TÉCNICO BATIDORAS VITAMIX</text>
+</svg>
