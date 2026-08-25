@@ -18,7 +18,7 @@
 <header class="header">
 <div class="wrap nav">
   <a href="#inicio"><img class="logo" src="/assets/logo.svg" alt="VitamixTech Servicio Técnico Batidoras Vitamix"></a>
-  <nav class="links">
+  <nav class="links" id="mainMenu">
     <a href="#problemas">Qué le pasa</a>
     <a href="#revision">Qué revisamos</a>
     <a href="#recogida">Recogida</a>
@@ -26,6 +26,7 @@
     <a href="#contacto">Contacto</a>
     <a class="navcall" href="tel:+34914468503">Atención Telefónica 24 horas 365 días</a>
   </nav>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainMenu">Menú</button>
 </div>
 </header>
 
@@ -259,7 +260,7 @@ createChat({
     const root=document.querySelector('#n8n-chat');
     if(!root)return;
     const toggle=root.querySelector('.chat-window-toggle,[class*="chat-window-toggle"]');
-    const win=root.querySelector('.chat-window,[class*="chat-window"]');
+    const win=root.querySelector('.chat-window:not([class*="toggle"]),[class*="chat-window"]:not([class*="toggle"])');
     const mobile=matchMedia('(max-width:600px)').matches;
 
     if(toggle){
@@ -267,6 +268,7 @@ createChat({
       toggle.style.setProperty('right',mobile?'16px':'22px','important');
       toggle.style.setProperty('bottom','96px','important');
       toggle.style.setProperty('z-index','10060','important');
+      toggle.style.setProperty('border','1px solid #fff','important');
     }
 
     if(win){
@@ -292,6 +294,17 @@ createChat({
 
   boot();
 })();
+
+const menuBtn=document.getElementById('menuBtn');
+const mainMenu=document.getElementById('mainMenu');
+menuBtn?.addEventListener('click',()=>{
+  const open=mainMenu.classList.toggle('open');
+  menuBtn.setAttribute('aria-expanded',open?'true':'false');
+});
+mainMenu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+  mainMenu.classList.remove('open');
+  menuBtn.setAttribute('aria-expanded','false');
+}));
 
 const form=document.getElementById('contact-form');
 const statusEl=document.getElementById('form-status');
