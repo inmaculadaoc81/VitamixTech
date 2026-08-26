@@ -34,4 +34,24 @@ CONTACT_EMAIL=soporte@kelatos.com
 El correo no aparece visible en la web; solo se utiliza en /api/contacto.
 
 Google Analytics:
-No se proporcionó código para esta web; no se ha añadido ninguno.
+G-H78CMVGG8T
+
+REVISIÓN (fixes adicionales aplicados):
+- Ya tenía menú móvil, colisión del chatbot corregida, borde blanco del
+  chat y schema.org (de un commit anterior); no se ha tocado nada.
+- Botón de teléfono del menú (.navcall): acortado a solo el número
+  (mismo problema de línea partida visto en otros repos de la familia);
+  añadido white-space:nowrap.
+- Añadida sección de contenido SEO propio (#guia), enlazada en el menú.
+- Banner de cookies: no existía. Añadido (Aceptar / Rechazar / Política
+  de privacidad → https://kelatos.com/privacy-policy/), con diseño
+  apilado a ancho completo en móvil.
+- H1 de portada reescrito, corto (≤10 palabras) e incluyendo la marca
+  (Vitamix), con el tamaño aumentado: "Tu Vitamix no funciona. ¿Merece
+  la pena repararla?"
+
+REDIRECCIÓN DE URLS ANTIGUAS:
+Este sitio era antes multipágina (tenía /servicios/... y /modelos/...,
+eliminados en commits anteriores al pasar a one-page). Añadido
+middleware.mjs: cualquier URL que no sea "/" redirige (301) a la home.
+Añadida la dependencia "@vercel/functions" en package.json.
