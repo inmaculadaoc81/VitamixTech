@@ -47,11 +47,20 @@ REVISIÓN (fixes adicionales aplicados):
   de privacidad → https://kelatos.com/privacy-policy/), con diseño
   apilado a ancho completo en móvil.
 - H1 de portada reescrito, corto (≤10 palabras) e incluyendo la marca
-  (Vitamix), con el tamaño aumentado: "Tu Vitamix no funciona. ¿Merece
-  la pena repararla?"
+  (Vitamix), con el tamaño aumentado. Iterado en varios commits
+  posteriores (afirmativo, sin interrogación, sin condicionales, sin
+  "Descubre") hasta el texto final actual: "Tu Vitamix no funciona.
+  Le devolvemos toda su potencia."
 
 REDIRECCIÓN DE URLS ANTIGUAS:
 Este sitio era antes multipágina (tenía /servicios/... y /modelos/...,
 eliminados en commits anteriores al pasar a one-page). Añadido
 middleware.mjs: cualquier URL que no sea "/" redirige (301) a la home.
 Añadida la dependencia "@vercel/functions" en package.json.
+
+REVISIÓN ADICIONAL (esta pasada — auditoría completa):
+- H1, schema.org (teléfono único, coincide en todas partes), og:*,
+  canonical (https), borde del chat, sección SEO, banner de cookies,
+  package.json y middleware ya estaban todos correctos. Solo se ha
+  actualizado este README, que documentaba una versión anterior y ya
+  superada del H1. No se ha tocado ningún archivo del sitio.
