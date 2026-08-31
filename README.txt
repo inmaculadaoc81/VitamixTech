@@ -64,3 +64,29 @@ REVISIÓN ADICIONAL (esta pasada — auditoría completa):
   package.json y middleware ya estaban todos correctos. Solo se ha
   actualizado este README, que documentaba una versión anterior y ya
   superada del H1. No se ha tocado ningún archivo del sitio.
+
+REVISIÓN ADICIONAL (checklist unificado de la familia, a petición del cliente):
+- H1 repetía la plantilla "no funciona" usada en varios repos.
+  Reescrito con síntoma específico: "Tu Vitamix se apaga sola al
+  usarla. La reparamos." (9 palabras).
+- BUG REAL — quitada la etiqueta rotada del hero (.hero-label,
+  "Batidoras Vitamix · Madrid") que sobresalía y se solapaba con la
+  caja de información en anchos de tablet, mismo patrón detectado hoy
+  en AcerTech y KoboldTech (aquí con un tercer nombre de clase
+  distinto: .hero-label).
+- BUG REAL — dos textos decorativos gigantes sin reducción de tamaño
+  en móvil/tablet: ".problems::after" ("VITAMIX", 170px) y
+  ".blender-art::before" ("POTENCIA", 92px). Añadida reducción en
+  tablet (100px/56px) y móvil (60px/40px).
+- Enlace de política de privacidad: la casilla existía pero sin
+  enlace. Añadido a https://kelatos.com/privacy-policy/, en azul y
+  subrayado.
+- Añadida franja de aviso de servicio técnico independiente debajo
+  del menú (no existía).
+- Añadido "Sábados, domingos y días festivos estamos cerrados" debajo
+  del horario.
+- Botón "Atención Telefónica..." sin icono, a diferencia del de
+  WhatsApp. Añadido (verificado con cuidado el cierre de </a>).
+- Verificado: schema.org ya usaba correctamente el único teléfono que
+  tiene este repo; formulario correctamente conectado a
+  /api/contacto.
