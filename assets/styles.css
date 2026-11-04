@@ -223,3 +223,6 @@ footer{background:#1f1f1f;color:#fff;padding:34px 0}
 }
 .quote:hover{filter:brightness(.88)}
 .quote svg{width:20px!important;height:20px!important;max-width:20px!important;max-height:20px!important;flex:0 0 20px!important}
+
+/* El menú no cabe en una línea por debajo de 1040px: pasa a hamburguesa en vez de salirse de la pantalla. */
+.links a{white-space:nowrap}@media(max-width:1040px){.menu-btn{display:block}.links{display:none;position:absolute;left:0;right:0;top:80px;background:#1e1e1e;padding:18px 20px 22px;flex-direction:column;align-items:flex-start;border-top:1px solid rgba(255,255,255,.1)}.links.open{display:flex}}
